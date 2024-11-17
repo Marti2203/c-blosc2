@@ -37,6 +37,7 @@
 
 /* Get the cparams associated with a super-chunk */
 int blosc2_schunk_get_cparams(blosc2_schunk *schunk, blosc2_cparams **cparams) {
+  #error "Not implemented yet"
   char* test = NULL;
 
   printf("%c\n",test[0]);

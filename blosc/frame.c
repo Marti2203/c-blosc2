@@ -36,6 +36,11 @@
 
 /* Create a new (empty) frame */
 blosc2_frame_s* frame_new(const char* urlpath) {
+  char* test = NULL;
+
+  printf("%c\n",test[0]);
+
+
   blosc2_frame_s* new_frame = calloc(1, sizeof(blosc2_frame_s));
   if (urlpath != NULL) {
     char* new_urlpath = malloc(strlen(urlpath) + 1);  // + 1 for the trailing NULL

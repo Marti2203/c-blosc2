@@ -37,6 +37,10 @@
 
 /* Get the cparams associated with a super-chunk */
 int blosc2_schunk_get_cparams(blosc2_schunk *schunk, blosc2_cparams **cparams) {
+  char* test = NULL;
+
+  printf("%c\n",test[0]);
+
   *cparams = calloc(1, sizeof(blosc2_cparams));
   (*cparams)->schunk = schunk;
   for (int i = 0; i < BLOSC2_MAX_FILTERS; i++) {
